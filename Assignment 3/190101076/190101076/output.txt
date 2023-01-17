@@ -1,0 +1,100 @@
+Line          Token          Token Type          Token Specifier
+1             PROGRAM        1                   
+1             STATS          22                  ^STATS                   
+2             VAR            2                   
+3             SUM            22                  ^SUM                     
+3             ,              14                  
+3             SUMSQ          22                  ^SUMSQ                   
+3             ,              14                  
+3             I              22                  ^I                       
+3             ,              14                  
+3             VALUE          22                  ^VALUE                   
+3             ,              14                  
+3             MEAN           22                  ^MEAN                    
+3             ,              14                  
+3             VARIANCE       22                  ^VARIANCE                
+3             :              13                  
+3             INTEGER        6                   
+4             BEGIN          3                   
+5             SUM            22                  ^SUM                     
+5             :=             15                  
+5             0              23                  #0                       
+5             ;              12                  
+6             SUMSQ          22                  ^SUMSQ                   
+6             :=             15                  
+6             0              23                  #0                       
+6             ;              12                  
+7             FOR            7                   
+7             I              22                  ^I                       
+7             :=             15                  
+7             1              23                  #1                       
+7             TO             10                  
+7             100            23                  #100                     
+7             DO             11                  
+8             BEGIN          3                   
+9             READ           8                   
+9             (              20                  
+9             VALUE          22                  ^VALUE                   
+9             )              21                  
+9             ;              12                  
+10            SUM            22                  ^SUM                     
+10            :=             15                  
+10            SUM            22                  ^SUM                     
+10            +              16                  
+10            VALUE          22                  ^VALUE                   
+10            ;              12                  
+11            SUMSQ          22                  ^SUMSQ                   
+11            :=             15                  
+11            SUMSQ          22                  ^SUMSQ                   
+11            +              16                  
+11            VALUE          22                  ^VALUE                   
+11            *              18                  
+11            VALUE          22                  ^VALUE                   
+12            END            4                   
+12            ;              12                  
+13            MEAN           22                  ^MEAN                    
+13            :=             15                  
+13            SUM            22                  ^SUM                     
+13            DIV            19                  
+13            100            23                  #100                     
+13            ;              12                  
+14            VARIANCE       22                  ^VARIANCE                
+14            :=             15                  
+14            SUMSQ          22                  ^SUMSQ                   
+14            DIV            19                  
+14            100            23                  #100                     
+14            -              17                  
+14            MEAN           22                  ^MEAN                    
+14            *              18                  
+14            MEAN           22                  ^MEAN                    
+14            ;              12                  
+15            WRITE          9                   
+15            (              20                  
+15            MEAN           22                  ^MEAN                    
+15            ,              14                  
+15            VARIANCE       22                  ^VARIANCE                
+15            )              21                  
+16            END.           5                   
+
+ --------------------------------------------------------------------------
+SYM TABLE
+bucket[0] = #100 -> NULL
+bucket[1] = ^VALUE -> NULL
+bucket[2] = NULL
+bucket[3] = NULL
+bucket[4] = NULL
+bucket[5] = ^VARIANCE -> ^SUM -> NULL
+bucket[6] = NULL
+bucket[7] = NULL
+bucket[8] = #0 -> NULL
+bucket[9] = #1 -> ^SUMSQ -> NULL
+bucket[10] = NULL
+bucket[11] = NULL
+bucket[12] = NULL
+bucket[13] = ^I -> NULL
+bucket[14] = ^MEAN -> NULL
+bucket[15] = NULL
+bucket[16] = NULL
+bucket[17] = NULL
+bucket[18] = NULL
+bucket[19] = ^STATS -> NULL
